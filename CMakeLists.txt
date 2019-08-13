@@ -279,6 +279,14 @@ opm_add_test(lens_immiscible_ecfv_ad_parallel
              DRIVER_ARGS --parallel-simulation=4
              TEST_ARGS --end-time=250 --initial-time-step-size=250)
 
+# Mark parallel tests for sequential execution
+set_tests_properties(co2injection_ncp_ni_ecfv_parallel
+									   obstacle_immiscible_parallel
+										 lens_immiscible_vcfv_fd_parallel
+										 lens_immiscible_vcfv_ad_parallel
+										 lens_immiscible_ecfv_ad_parallel
+										 PROPERTIES SERIAL_RUN 1)
+
 opm_add_test(obstacle_immiscible_parameters
              EXE_NAME obstacle_immiscible
              NO_COMPILE
