@@ -787,8 +787,6 @@ public:
         return isMiscible_;
     }
 
-
-private:
     static SolventPvt solventPvt_;
 
     static std::vector<TabulatedFunction> ssfnKrg_; // the krg(Fs) column of the SSFN table

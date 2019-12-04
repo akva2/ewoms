@@ -913,7 +913,7 @@ public:
 
 
 
-private:
+//private:
     static std::vector<Scalar> plyrockDeadPoreVolume_;
     static std::vector<Scalar> plyrockResidualResistanceFactor_;
     static std::vector<Scalar> plyrockRockDensityFactor_;

@@ -443,7 +443,7 @@ public:
         return foamCoefficients_[satnumRegionIdx];
     }
 
-private:
+//private:
     static std::vector<Scalar> foamRockDensity_;
     static std::vector<bool> foamAllowDesorption_;
     static std::vector<FoamCoefficients> foamCoefficients_;
